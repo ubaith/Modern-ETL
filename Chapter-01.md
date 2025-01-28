@@ -19,3 +19,12 @@
 6. What’s the volume?
 7. What processing is required?
 8. How will the data be stored?
+
+## Ingestion Considerations
+1. Frequency
+   a. Batch
+   b. Micro-batch
+   c. Streaming
+3. volume
+4. format
+5. processing
