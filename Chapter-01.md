@@ -60,3 +60,41 @@
          3. Structured
    3. Format
    4. Variety
+
+## Choosing a Solution
+1. Declarative Solutions
+   - Types
+     1. Legacy
+        1. Talend
+        2. WhereScape
+        3. Pentaho
+     2. Modern
+        1. Fivetran
+        2. Stitch
+        3. Airbyte
+     3. Native
+        1. Databricks
+   - Cost to build/maintain
+     * Dedicated support will be available from the vendors
+   - Extensibility
+     * Extensibility is crucial. A lack of extensibility can lead to the need for multiple solutions, increasing costs and complexity.
+   - Cost to switch
+     * vendor lock-in and switching to a different tool can be costly
+2. Imperative Solutions
+   - Types
+     1. Singer Tap
+     2. Lambda Function
+     3. Apache Beam templates
+     4. Job Orchestration
+        * Apache Airflow
+   - Extensibility
+     * tailored to the needs of the business but need large data engineering team
+   - Cost to build/maintain
+     * Time consuming and amplyfing complexity
+   - Cost to switch
+     * potentially offering a smoother switch
+3. Hybrid Solutions
+   - Mix of following
+     1. Fivetran and in-house solutions for unique sources
+     2. Airbyte/Meltano and custom components for unsupported data sources
+     3. dlt
