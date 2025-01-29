@@ -22,29 +22,29 @@
 
 ## Ingestion Considerations
 1. Frequency
-   a. Batch
-   b. Micro-batch
-   c. Streaming
-      - methods
-           i. Windowing
-           ii. Fixed windows
-           iii. Sliding windows
-           iv. Sessions
-           v. Time-agnostic
-      - Message services
-           i. Apache Kafka
-           ii. Redpanda
-           iii. Pub/Sub
-           iv. Kinesis
-      - Processing Engines
-           i. Apache Flink
-           ii. Apache Spark Structured Streaming
-           iii. Apache Kafka Streams
-      - Simplifying stream processing
-           i. Managed platforms
-           ii. Confluent Kafka
-           iii. Bytewax
+   1. Batch
+   2. Micro-batch
+   3. Streaming
+         - methods
+           1. Windowing
+           2. Fixed windows
+           3. Sliding windows
+           4. Sessions
+           5. Time-agnostic
+         - Message services
+           1. Apache Kafka
+           2. Redpanda
+           3. Pub/Sub
+           4. Kinesis
+         - Processing Engines
+           1. Apache Flink
+           2. Apache Spark Structured Streaming
+           3. Apache Kafka Streams
+         - Simplifying stream processing
+           1. Managed platforms
+           2. Confluent Kafka
+           3. Bytewax
         
-2. Payload
+3. Payload
 4. format
 5. processing
