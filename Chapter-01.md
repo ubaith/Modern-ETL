@@ -25,6 +25,26 @@
    a. Batch
    b. Micro-batch
    c. Streaming
-3. volume
+      - methods
+           i. Windowing
+           ii. Fixed windows
+           iii. Sliding windows
+           iv. Sessions
+           v. Time-agnostic
+      - Message services
+           i. Apache Kafka
+           ii. Redpanda
+           iii. Pub/Sub
+           iv. Kinesis
+      - Processing Engines
+           i. Apache Flink
+           ii. Apache Spark Structured Streaming
+           iii. Apache Kafka Streams
+      - Simplifying stream processing
+           i. Managed platforms
+           ii. Confluent Kafka
+           iii. Bytewax
+        
+2. Payload
 4. format
 5. processing
