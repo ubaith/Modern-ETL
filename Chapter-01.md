@@ -45,6 +45,18 @@
            2. Confluent Kafka
            3. Bytewax
         
-3. Payload
-4. format
-5. processing
+2. Payload
+   1. Volume
+      - factors to consider
+         1. Cost
+         2. Latency
+         3. Throughput/scalability
+         4. Retention
+   2. Structure and shape
+         1. Unstructured
+         2. Semi-structured
+            - XML
+            - JSON
+         3. Structured
+   3. Format
+   4. Variety
