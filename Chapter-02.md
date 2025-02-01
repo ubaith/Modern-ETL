@@ -26,3 +26,11 @@
      * BigQuery
      * RedShift
      * Snowflake
+
+## Building a Transformation Solution
+1. Data Transformation Patterns
+   - Enrichment
+     * enhancing existing data with additional sources
+     * involve joining on internal structures or fetching additional data from external source
+   - Joining
+     * 
