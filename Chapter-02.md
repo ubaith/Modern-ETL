@@ -49,8 +49,28 @@
   9. Deduplication
      * removing redundant records to create a unique dataset
 - Data Update Patterns
-  1.Overwrite
+  1. Overwrite
   2. Insert
   3. Upsert
   4. Delete
 - Best Practices
+  1. Staging
+     * protect against data loss
+     * ensure a low time to recovery
+   2. Idempotency
+      * ensures consistency and reliability
+      * doing something multiple times yields consistent results or reproducibility
+      * crucial for handling failures and ensuring data consistency in distributed systems
+   3. Normalization and denormalization
+      * normalized data is unique and sometimes has a primary key
+      * Denormalization involves duplicating records and information to make a system more performant
+   4. Incrementality
+      * defines whether pipeline is a simple INSERT OVERWRITE or a more complex UPSERT
+## Real-Time Data Transformation
+- True streaming transformations can be done using Beam, Flink, Kafka
+- micro-batch transformations can be effective streaming transformations when latency is low enough using Apache Spark with PySpark or Spark SQL
+- Spark Structured Streaming is a popular streaming application with features
+  * streaming aggregations
+  * eventtime windows
+  * stream-to-batch joins
+- 
