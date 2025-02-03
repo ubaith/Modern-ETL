@@ -51,3 +51,27 @@
         * Mage (pre-v1)
         * Keboola (pre-v1)
         * Keboola (pre-v1)
+ - Orchestrating SQL
+   * data transformation has its own concept of orchestration
+   * data is written to a source system, then transformed sequentially with complex SQL queries and manipulations
+   * Tools: dbt, Delta Live Tables, Dataform, or SQLMesh
+      - evaluate dependencies and conditions,then optimize and execute commands against a database to produce desired result
+   * platform-specific data orchestrator gives visibility (Lineage), both between and within data workflows
+## Design Patterns and Best Practices
+- Backfills
+  * anything done once should be repeatable
+  * Ex: Airflow DAGs allow set a past start_date to trigger a run that recreates historical data
+- Idempotence
+  * ensuring doing something multiple times yields consistent results
+- Event-driven orchestration
+  * allows for reactivity to changes in data or system states
+  * Ex: Transformation starting after the ingestion finishes
+- Conditional logic
+  * allows further automate the ETL process
+  * account for errors, failures, or malformed data
+- Concurrency
+  * Orchestrators are obviously capable of running concurrent pipelines
+- Fast feedback loops
+  * tool that allows to fail fast and identify errors quickly
+- Retry and fallback logic
+  * 
