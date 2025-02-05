@@ -74,4 +74,14 @@
 - Fast feedback loops
   * tool that allows to fail fast and identify errors quickly
 - Retry and fallback logic
-  * 
+  * handling failures well ensures data integrity and system reliability
+  * Conditional logic can be paired with retry/fallback logic to create scenarios that gracefully handle errors
+- Parameterized execution
+  * allows for further malleability in orchestration and allows reuse pipelines for multiple purposes
+- Lineage
+  * the path traveled by data through its lifecycle
+  * column-level lineage: a column-level view of data’s journey, from ingestion to analysis
+- Pipeline decomposition
+  *  ensuring tidy, readable pipelines is to break them down into smaller
+  *  build autonomous DAGs that can be run in parallel to mitigate dependencies and critical failures
+  *  Modular design will also make it easier to build and debug workflows
